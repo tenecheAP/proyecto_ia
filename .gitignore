@@ -1,0 +1,61 @@
+# Ignorar carpetas de entornos virtuales
+venv/
+.venv/
+env/
+.env/
+
+# Archivos de caché y compilados de Python
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+*.egg
+*.egg-info/
+build/
+dist/
+wheels/
+
+# Archivos de Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+# Ignorar también posibles archivos de salida si no se quieren versionar
+# *.html
+# *.pdf
+# *.json
+# *.csv
+# *.parquet
+
+# Archivos específicos de IDEs (editores de código)
+.vscode/        # Configuración de VS Code
+.idea/          # Configuración de PyCharm/IntelliJ
+*.sublime-project
+*.sublime-workspace
+
+# Archivos de sistema operativo
+.DS_Store       # macOS
+Thumbs.db       # Windows
+ehthumbs.db     # Windows
+Desktop.ini     # Windows
+
+# Archivos de datos o modelos (grandes y/o que se pueden generar)
+# Descomenta y añade los que correspondan a tu proyecto
+# Si tienes modelos entrenados que son muy grandes y no quieres subirlos
+# *.pkl
+# *.h5
+# *.keras
+# models/
+
+# Si tienes datasets grandes que no quieres subir
+# data/
+# raw_data/
+# processed_data/
+
+# Archivos de logs
+*.log
+logs/
+
+# Credenciales y archivos de configuración sensibles
+# ¡MUY IMPORTANTE! NO subas tus contraseñas, claves API, etc.
+.env            # Si usas archivos .env para variables de entorno
+config.ini      # O cualquier otro archivo con credenciales
+secrets.py
